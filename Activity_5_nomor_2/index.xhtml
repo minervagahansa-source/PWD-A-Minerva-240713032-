@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Form Reservasi Hotel</title>
+</head>
+<body>
+    <h1>Form Reservasi Hotel</h1>
+
+    <form action="proses_reservasi.php" method="post">
+        <fieldset>
+            <legend>Data Tamu</legend>
+            <p>
+                <label for="nama">Nama Lengkap:</label><br />
+                <input type="text" id="nama" name="nama" size="30" maxlength="50" />
+            </p>
+            <p>
+                <label for="email">Email:</label><br />
+                <input type="text" id="email" name="email" size="30" maxlength="50" />
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detail Reservasi</legend>
+            <p>
+                <label for="checkin">Tanggal Check-In:</label><br />
+                <input type="date" id="checkin" name="checkin" />
+            </p>
+            <p>
+                <label for="checkout">Tanggal Check-Out:</label><br />
+                <input type="date" id="checkout" name="checkout" />
+            </p>
+            <p>
+                <label for="tamu">Jumlah Tamu:</label><br />
+                <input type="number" id="tamu" name="tamu" min="1" max="10" />
+            </p>
+            <p>
+                <label for="tipe">Tipe Kamar:</label><br />
+                <select id="tipe" name="tipe">
+                    <option value="standar">Standar</option>
+                    <option value="deluxe">Deluxe</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Pesan Sekarang" />
+            <input type="reset" value="Reset" />
+        </p>
+    </form>
+</body>
+</html>
